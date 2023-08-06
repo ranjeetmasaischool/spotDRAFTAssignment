@@ -1,0 +1,28 @@
+package com.example.spotDraft.controller;
+
+import org.springframework.context.support.StaticApplicationContext;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.client.HttpServerErrorException;
+
+@org.springframework.web.bind.annotation.RestController
+@RequestMapping("/webhook")
+public class RestController {
+
+	 @PostMapping
+	    public ResponseEntity<String> handleWebhook(@RequestBody String payload) {
+	        // Process the incoming webhook payload here
+	        // Implement the logic to handle the data received from the webhook
+	        // For example, you can parse the JSON payload and perform actions accordingly
+	        // You can also call other services to process the data as needed
+
+	        // Return a response to the webhook sender (e.g., Asana) to acknowledge the request
+	        return ResponseEntity.ok("Webhook received successfully!");
+	    }
+
+}

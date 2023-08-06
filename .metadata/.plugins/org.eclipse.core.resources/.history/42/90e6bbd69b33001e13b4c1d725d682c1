@@ -1,0 +1,32 @@
+package com.example.spotDraft.controller;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.client.HttpServerErrorException;
+
+@org.springframework.web.bind.annotation.RestController
+public class RestController {
+	
+	
+	
+	@PostMapping("/asana")
+	public static ResponseEntity<String> asanaData(){
+		
+		
+		return new ResponseEntity<>("Sessufful",HttpStatus.CREATED);
+	}
+	
+	
+	
+	
+	
+	
+//	@GetMapping("/hello")
+//	
+//	public static String hellofun() {
+//		return "Seccussfull huaa";
+//	}
+
+}

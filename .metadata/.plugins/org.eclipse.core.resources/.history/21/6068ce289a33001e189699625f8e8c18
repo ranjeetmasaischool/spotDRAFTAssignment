@@ -1,0 +1,10 @@
+package RestController;
+
+
+@RestController
+public class MyController {
+	
+	
+	
+
+}
